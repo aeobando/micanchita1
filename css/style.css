@@ -197,13 +197,40 @@ main section.stakeholders .Morumbi h2 {
 main section.stakeholders .morumbiimg {
   border-radius: 150px;
 }
+main section.stakeholders .Atenas {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+main section.stakeholders .Atenas h2 {
+  color: white;
+  text-shadow: 1px 1px 1px black, 1px 1px 5px black, 1px -1px 5px black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 main section.stakeholders .atenasimg {
   border-radius: 150px;
+}
+main section.stakeholders .Bombonera {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+main section.stakeholders .Bombonera h2 {
+  color: white;
+  text-shadow: 1px 1px 1px black, 1px 1px 5px black, 1px -1px 5px black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 main section.stakeholders .bomboneraimg {
   border-radius: 150px;
 }
 main section.contactos {
+  background: #f1f1f2;
   margin: 5px 150px 5px 150px;
   padding: 20px;
   display: grid;
@@ -249,4 +276,35 @@ footer a {
 }
 footer p {
   color: black;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background: #f1f1f2;
+  }
+  header {
+    background: url("../images/back1.jpg");
+    background-size: cover;
+  }
+  header nav {
+    grid-template-columns: 40px 1fr;
+  }
+  header nav #logo {
+    display: none;
+  }
+  header section {
+    grid-template-columns: 1fr;
+  }
+  header section blockquote {
+    display: none;
+  }
+  main {
+    grid-template-columns: 1fr;
+    padding: 30px 5px;
+  }
+}
+@media screen and (min-width: 600px) {
+  #logomini {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */

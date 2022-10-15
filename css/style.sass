@@ -168,18 +168,39 @@ main
                 top: 50%
                 left: 50%
                 transform: translate(-50%, -50%)
-                
         .morumbiimg
             border-radius: 150px
             
-                                                            
+        .Atenas
+            position: relative
+            display: inline-block
+            text-align: center
+            h2
+                color: white
+                text-shadow: 1px 1px 1px black, 1px 1px 5px black,1px -1px 5px black
+                position: absolute
+                top: 50%
+                left: 50%
+                transform: translate(-50%, -50%)                                                   
         .atenasimg
             border-radius: 150px
-                                                
+
+        .Bombonera
+            position: relative
+            display: inline-block
+            text-align: center
+            h2
+                color: white
+                text-shadow: 1px 1px 1px black, 1px 1px 5px black,1px -1px 5px black
+                position: absolute
+                top: 50%
+                left: 50%
+                transform: translate(-50%, -50%)                                    
         .bomboneraimg
             border-radius: 150px
-                                    
+
     section.contactos 
+        background: #f1f1f2
         margin: 5px 150px 5px 150px
         padding: $pad-space
         display: grid
@@ -221,3 +242,27 @@ footer
         font-weight: normal
     p
         color: black
+
+@media screen and (max-width: 600px)
+    body
+        background: #f1f1f2
+    header
+          background: url('../images/back1.jpg')
+          background-size: cover
+
+          nav
+            grid-template-columns: 40px 1fr
+            #logo
+                display: none
+          section
+            grid-template-columns: 1fr
+            blockquote
+                display: none
+            
+        
+    main
+        grid-template-columns: 1fr
+        padding: 30px 5px
+@media screen and (min-width: 600px)
+    #logomini
+        display: none
