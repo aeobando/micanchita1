@@ -163,6 +163,73 @@ main section.caracteristicas .precio h2 {
 main section.caracteristicas .precio p {
   font-size: 0.9em;
 }
+main blockquote {
+  display: block;
+  text-align: center;
+  width: 900px;
+  margin: 10px auto;
+  padding: 5px;
+  font-size: 1em;
+}
+main section.stakeholders {
+  margin: 5px 150px 5px 150px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+main section.stakeholders .morumbi {
+  border-radius: 160px;
+}
+main section.stakeholders .atenas {
+  border-radius: 160px;
+}
+main section.stakeholders .bombonera {
+  border-radius: 160px;
+}
+main section.contactos {
+  margin: 5px 150px 5px 150px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+main section.contactos .direccion {
+  padding: 5px;
+  text-align: center;
+  float: left;
+}
+main section.contactos .direccion h2 {
+  color: rgb(90, 87, 87);
+}
+main section.contactos .direccion p {
+  font-size: 0.9em;
+}
+main section.contactos .telefonos {
+  padding: 5px;
+  text-align: center;
+  float: left;
+}
+main section.contactos .telefonos h2 {
+  color: rgb(90, 87, 87);
+}
+main section.contactos .telefonos p {
+  font-size: 0.9em;
+}
+main section.contactos .email {
+  background: withe;
+  padding: 5px;
+  text-align: center;
+  float: left;
+}
+main section.contactos .email h2 {
+  color: rgb(90, 87, 87);
+}
+main section.contactos .email p {
+  font-size: 0.9em;
+}
 
 footer {
   background: #b2bfae;
