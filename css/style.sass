@@ -149,25 +149,39 @@ main
 
     section.stakeholders
         margin: 5px 150px 5px 150px
-        padding: 10px
-        display: grid
-        justify-content: center
+        padding: $pad-space
         grid-template-columns: repeat(3, 1fr)
-        grid-gap: 20px
-        grid-auto-rows: minmax(100px, auto)
-        
-        .morumbi
-            border-radius: 160px
+        grid-gap: 200px
+        grid-auto-rows: minmax(100px, auto, auto)
+        display: flex
+        justify-content: center
+        align-items: center
+
+        .Morumbi
+            position: relative
+            display: inline-block
+            text-align: center
+            h2
+                color: white
+                text-shadow: 1px 1px 1px black, 1px 1px 5px black,1px -1px 5px black
+                position: absolute
+                top: 50%
+                left: 50%
+                transform: translate(-50%, -50%)
+                
+        .morumbiimg
+            border-radius: 150px
+            
+                                                            
+        .atenasimg
+            border-radius: 150px
                                                 
-        .atenas
-            border-radius: 160px
+        .bomboneraimg
+            border-radius: 150px
                                     
-        .bombonera
-            border-radius: 160px
-                        
     section.contactos 
         margin: 5px 150px 5px 150px
-        padding: 10px
+        padding: $pad-space
         display: grid
         grid-template-columns: repeat(3, 1fr)
         grid-gap: 10px
