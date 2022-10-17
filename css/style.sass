@@ -25,7 +25,7 @@ header
     font-family: 'Exo', sans-serif
     font-family: 'Oswald', sans-serif
     background: url('../images/back1.jpg')
-    background-size: auto,cover
+    background-size: cover
     background-repeat: no-repeat
     background-position: bottom
     border-bottom: 15px solid $primary
@@ -248,9 +248,46 @@ footer
     p
         color: black
 
-@media screen and (max-width: 600px)
-    
-    
+
+@media screen and (max-width: 990px)
+    body
+        background: #f1f1f2
+    header
+          background: url('../images/back1.jpg')
+          background-size: cover
+          nav
+            grid-template-columns: 20px 1fr
+            #logo
+                display: none
+            
+          section
+            blockquote
+                text-align: center
+        
+    main
+        section.caracteristicas
+            grid-template-columns: 1fr
+            justify-content: center
+        
+        section.stakeholders
+            grid-template-columns: 1fr
+            justify-content: center
+            .StakeHolderBq
+                grid-column: 1 /span 1
+        section.contactos
+            padding: 20px 0px 80px 0px /* arriba, derecha, abajo, izquierda */
+            grid-template-columns: 1fr
+            justify-content: center
+            .ContactosBq
+                grid-column: 1 /span 1
+        blockquote
+            max-width:400px
+            color: #5c4c40
+            text-align: center
+            p
+                max-width:400px
+                color: #5c4c40
+                text-align: center
 
 @media screen and (max-width: 600px)
     body
@@ -258,20 +295,41 @@ footer
     header
           background: url('../images/back1.jpg')
           background-size: cover
-
           nav
-            grid-template-columns: 40px 1fr
+            grid-template-columns: 20px 1fr
             #logo
                 display: none
-          section
-            grid-template-columns: 1fr
-            blockquote
-                display: none
             
+          section
+            blockquote
+                text-align: center
         
     main
-        grid-template-columns: 1fr
-        padding: 30px 5px
+        section.caracteristicas
+            grid-template-columns: 1fr
+            justify-content: center
+        
+        section.stakeholders
+            grid-template-columns: 1fr
+            justify-content: center
+            .StakeHolderBq
+                grid-column: 1 /span 1
+        section.contactos
+            padding: 20px 0px 80px 0px /* arriba, derecha, abajo, izquierda */
+            grid-template-columns: 1fr
+            justify-content: center
+            .ContactosBq
+                grid-column: 1 /span 1
+        blockquote
+            max-width:400px
+            color: #5c4c40
+            text-align: center
+            p
+                max-width:400px
+                color: #5c4c40
+                text-align: center
+            
 @media screen and (min-width: 600px)
-    #logomini
-        display: none
+    body
+        #logo-mini
+            display: none

@@ -31,7 +31,7 @@ header {
   font-family: "Exo", sans-serif;
   font-family: "Oswald", sans-serif;
   background: url("../images/back1.jpg");
-  background-size: auto, cover;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
   border-bottom: 15px solid 1px;
@@ -286,6 +286,53 @@ footer p {
   color: black;
 }
 
+@media screen and (max-width: 990px) {
+  body {
+    background: #f1f1f2;
+  }
+  header {
+    background: url("../images/back1.jpg");
+    background-size: cover;
+  }
+  header nav {
+    grid-template-columns: 20px 1fr;
+  }
+  header nav #logo {
+    display: none;
+  }
+  header section blockquote {
+    text-align: center;
+  }
+  main section.caracteristicas {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+  main section.stakeholders {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+  main section.stakeholders .StakeHolderBq {
+    grid-column: 1/span 1;
+  }
+  main section.contactos {
+    padding: 20px 0px 80px 0px;
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+  main section.contactos .ContactosBq {
+    grid-column: 1/span 1;
+  }
+  main blockquote {
+    max-width: 400px;
+    color: #5c4c40;
+    text-align: center;
+  }
+  main blockquote p {
+    max-width: 400px;
+    color: #5c4c40;
+    text-align: center;
+  }
+}
 @media screen and (max-width: 600px) {
   body {
     background: #f1f1f2;
@@ -295,24 +342,46 @@ footer p {
     background-size: cover;
   }
   header nav {
-    grid-template-columns: 40px 1fr;
+    grid-template-columns: 20px 1fr;
   }
   header nav #logo {
     display: none;
   }
-  header section {
-    grid-template-columns: 1fr;
-  }
   header section blockquote {
-    display: none;
+    text-align: center;
   }
-  main {
+  main section.caracteristicas {
     grid-template-columns: 1fr;
-    padding: 30px 5px;
+    justify-content: center;
+  }
+  main section.stakeholders {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+  main section.stakeholders .StakeHolderBq {
+    grid-column: 1/span 1;
+  }
+  main section.contactos {
+    padding: 20px 0px 80px 0px;
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+  main section.contactos .ContactosBq {
+    grid-column: 1/span 1;
+  }
+  main blockquote {
+    max-width: 400px;
+    color: #5c4c40;
+    text-align: center;
+  }
+  main blockquote p {
+    max-width: 400px;
+    color: #5c4c40;
+    text-align: center;
   }
 }
 @media screen and (min-width: 600px) {
-  #logomini {
+  body #logo-mini {
     display: none;
   }
 }/*# sourceMappingURL=style.css.map */
