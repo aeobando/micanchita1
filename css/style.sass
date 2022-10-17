@@ -83,7 +83,7 @@ main
             //border: solid 2px #f60
             
     section.caracteristicas   
-        margin: 5px 150px 5px 150px
+        margin: 5px 150px 40px 150px /* arriba, derecha, abajo, izquierda */
         padding: 10px
         display: grid
         grid-template-columns: repeat(2, 1fr)
@@ -148,15 +148,19 @@ main
         font-size: 1.0em
 
     section.stakeholders
-        margin: 5px 150px 5px 150px
+        background: #ffffff66
+        margin: 0px 0px 0px 0px /* arriba, derecha, abajo, izquierda */
         padding: $pad-space
+        grid-template-rows: auto auto
         grid-template-columns: repeat(3, 1fr)
-        grid-gap: 200px
-        grid-auto-rows: minmax(100px, auto, auto)
-        display: flex
+        grid-gap: 30px
+        display: grid
         justify-content: center
         align-items: center
-
+        
+        .StakeHolderBq
+            grid-column: 1 /span 3
+            
         .Morumbi
             position: relative
             display: inline-block
@@ -200,40 +204,41 @@ main
             border-radius: 150px
 
     section.contactos 
-        background: #f1f1f2
-        margin: 5px 150px 5px 150px
-        padding: $pad-space
+        background: #171616
+        height: 250px
+        padding: 30px
         display: grid
+        grid-template-rows: auto auto
         grid-template-columns: repeat(3, 1fr)
         grid-gap: 10px
-        grid-auto-rows: minmax(100px, auto)
+        font-size: 1.0em
+        .ContactosBq
+            grid-column: 1 /span 3
+            color: white
+            .h1Blocq
+                color: white
+                font-size: 2.2em
         .direccion
             padding: $pad-space10
             text-align: center
-            h2
-                color: $colorh2
+            color: white
         .telefonos
             padding: $pad-space10
             text-align: center
-            h2
-                color: $colorh2
+            color: white
         .email
             padding: $pad-space10
             text-align: center
-            h2
-                color: $colorh2
-           
-            
-
-    
-    
+            color: white
+               
 footer
     
     background: #b2bfae
     border-top: 10px solid $primary
-    display: grid
-    grid-template-columns: 1fr 1fr 1fr
-    padding: 20px $pad-space 40px  $pad-space
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: $pad-space
     color: white
     font-weight: normal
     a
@@ -242,6 +247,10 @@ footer
         font-weight: normal
     p
         color: black
+
+@media screen and (max-width: 600px)
+    
+    
 
 @media screen and (max-width: 600px)
     body
