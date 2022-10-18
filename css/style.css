@@ -84,7 +84,6 @@ main blockquote h1 {
   text-align: center;
   justify-content: center;
   color: rgb(90, 87, 87);
-  size-adjust: auto;
 }
 main blockquote p.descripcion {
   display: block;
@@ -103,7 +102,7 @@ main section.caracteristicas {
   grid-auto-rows: minmax(100px, auto);
 }
 main section.caracteristicas .torneos {
-  background: withe;
+  background: #ffffff;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
   border-radius: 5px;
   margin: 50px 20px 5px 20px;
@@ -118,7 +117,7 @@ main section.caracteristicas .torneos p {
   font-size: 0.9em;
 }
 main section.caracteristicas .reserva {
-  background: withe;
+  background: #ffffff;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
   border-radius: 5px;
   margin: 50px 20px 5px 20px;
@@ -133,7 +132,7 @@ main section.caracteristicas .reserva p {
   font-size: 0.9em;
 }
 main section.caracteristicas .pago {
-  background: withe;
+  background: rgb(255, 255, 255);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
   border-radius: 5px;
   margin: 50px 20px 5px 20px;
@@ -148,7 +147,7 @@ main section.caracteristicas .pago p {
   font-size: 0.9em;
 }
 main section.caracteristicas .precio {
-  background: withe;
+  background: rgb(255, 255, 255);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
   border-radius: 5px;
   margin: 50px 20px 5px 20px;
