@@ -307,6 +307,9 @@ footer p {
     grid-template-columns: 1fr;
     justify-content: center;
   }
+  main section.caracteristicas .caracteristicasblq {
+    grid-column: 1/span 1;
+  }
   main section.stakeholders {
     grid-template-columns: 1fr;
     justify-content: center;
